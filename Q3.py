@@ -77,10 +77,10 @@ def main():
             print(BBQ)
            
         again=input('Do you want to order another pizza? (Yes or No) ')
-        #while again=='Yes' or again=='yes':
-            #selection=input("Which pizza do you prefer?: ")
-            #extra= input('Would you like to add extra ingredients? Yes or No: ')
-        
+        if again=='Yes':
+            main()
+        else:
+            print('Bye')
     except ValueError:
            print("That item was not found in the list ")
            
