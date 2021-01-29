@@ -40,22 +40,22 @@ def main():
             if selection=='Newyork' or selection=='newyork':
                 Newyork.insert(0,extselect)
                 print ("Here is your new selection:", Newyork)
-                extra=input('Do you want to add another one? (Yes or No): ')
+                extra=input('Do you want to add another ingredient? (Yes or No): ')
                 
             if selection=='Veggie' or selection=='veggie':
                 Veggie.insert(0,extselect)
                 print ("Here is your new selection:", Veggie)
-                extra=input('Do you want to add another one? (Yes or No): ')
+                extra=input('Do you want to add another ingredient? (Yes or No): ')
                 
             if selection=='Margarita' or selection=='margarita':
                 Margarita.insert(0,extselect)
                 print ("Here is your new selection:", Margarita)
-                extra=input('Do you want to add another one? (Yes or No): ')
+                extra=input('Do you want to add another ingredient? (Yes or No): ')
                 
             if selection=='BBQ' or selection=='bbq':
                 BBQ.insert(0,extselect)
                 print ("Here is your new selection: ", BBQ)
-                extra=input('Do you want to add another one? (Yes or No): ')
+                extra=input('Do you want to add another ingredient? (Yes or No): ')
                 
         except ValueError:
             print("That item was not found in the Extra list")
