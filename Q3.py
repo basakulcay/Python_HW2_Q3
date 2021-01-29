@@ -38,22 +38,22 @@ def main():
         try: 
             extselect_index=Extra.index(extselect)
             
-            if selection=='Newyork' or selection=='newyork':
+            if selection.lower()=='newyork':
                 Newyork.insert(0,extselect)
                 print ("Here is your new selection:", Newyork)
                 extra=input('Do you want to add another ingredient? (Yes or No): ')
                 
-            if selection=='Veggie' or selection=='veggie':
+            if selection.lower()=='veggie':
                 Veggie.insert(0,extselect)
                 print ("Here is your new selection:", Veggie)
                 extra=input('Do you want to add another ingredient? (Yes or No): ')
                 
-            if selection=='Margarita' or selection=='margarita':
+            if selection.lower()=='margarita':
                 Margarita.insert(0,extselect)
                 print ("Here is your new selection:", Margarita)
                 extra=input('Do you want to add another ingredient? (Yes or No): ')
                 
-            if selection=='BBQ' or selection=='bbq':
+            if selection.lower()=='bbq':
                 BBQ.insert(0,extselect)
                 print ("Here is your new selection: ", BBQ)
                 extra=input('Do you want to add another ingredient? (Yes or No): ')
@@ -63,17 +63,17 @@ def main():
             extra=input('Do you want to add an extra ingredient? (Yes or No): ')
         
     try: 
-        if selection== 'Newyork' or selection=='newyork':
+        if selection.lower()== 'newyork':
             print("Here is your selection: ")
             print(Newyork)
             price(selection)
-        if selection=='Veggie' or selection=='veggie':
+        if selection.lower()=='veggie':
             print("Here is your selection: ")
             print(Veggie)
-        if selection== 'Margarita' or selection=='margarita':
+        if selection.lower()== 'margarita':
             print("Here is your selection: ")
             print(Margarita)
-        if selection== 'BBQ' or selection=='bbq':
+        if selection.lower()== 'bbq':
             print("Here is your selection: ")
             print(BBQ)
            
@@ -88,14 +88,14 @@ def main():
            print("That item was not found in the list ")
            
 def price(selection):
-    if selection== 'Newyork' or selection=='newyork':
+    if selection.lower()== 'newyork':
         print('It will cost USD',Price_newyork)
        
-    elif selection== 'Veggie' or selection=='veggie':
+    elif selection.lower()== 'veggie':
         print('It will cost USD',Price_veggie)
-    elif selection== 'Margarita' or selection=='margarita':
+    elif selection.lower()== 'margarita':
         print(Price_margarita)
-    elif selection== 'BBQ' or selection=='bbq':
+    elif selection.lower()== 'bbq':
         print('It will cost USD',Price_BBQ)
     else:
         print('Enter again')
