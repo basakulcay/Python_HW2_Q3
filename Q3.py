@@ -59,7 +59,7 @@ def main():
                 
         except ValueError:
             print("That item was not found in the Extra list")
-        
+            extra=input('Do you want to add an extra ingredient? (Yes or No): ')
         
     try: 
         if selection== 'Newyork' or selection=='newyork':
