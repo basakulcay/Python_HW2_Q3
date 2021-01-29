@@ -75,8 +75,9 @@ def main():
         if selection== 'BBQ' or selection=='bbq':
             print("Here is your selection: ")
             print(BBQ)
-            print('Do you want to order anything else? (Yes or No)')
-            again=input('')
+           
+        again=input('Do you want to order another pizza? (Yes or No) ')
+        #while again=='Yes' or again=='yes':
             #selection=input("Which pizza do you prefer?: ")
             #extra= input('Would you like to add extra ingredients? Yes or No: ')
         
