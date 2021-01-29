@@ -1,8 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Fri Jan 29 13:56:59 2021
-
 @author: basakulcay
 """
 
@@ -12,6 +9,8 @@ Margarita=['Spicy Tomato Sauce', 'Mozarella']
 BBQ=['Mozarella', 'BBQ Sauce','Grilled Chicken', 'Onion' ]
 Extra=['Olive','Salami','Sausage','Corn']
 extselect=[]
+selected=[]
+total=0
 
 Price_newyork= 10
 Price_veggie= 12
@@ -30,6 +29,8 @@ print("Extra's:", Extra)
 def main():
 
     selection=input("Which pizza do you prefer?: ")
+    selected.append(selection)
+    #total+=Price_newyork
     extra= input('Would you like to add extra ingredients? Yes or No: ')
     
     while extra== 'Yes' or extra=='yes':
@@ -77,16 +78,19 @@ def main():
             print(BBQ)
            
         again=input('Do you want to order another pizza? (Yes or No) ')
-        if again=='Yes':
+        if again=='Yes' or again=='yes':
             main()
         else:
-            print('Bye')
+            print('The pizzas you ordered are: ',selected)
+            #print(total)
+            
     except ValueError:
            print("That item was not found in the list ")
            
 def price(selection):
     if selection== 'Newyork' or selection=='newyork':
         print('It will cost USD',Price_newyork)
+       
     elif selection== 'Veggie' or selection=='veggie':
         print('It will cost USD',Price_veggie)
     elif selection== 'Margarita' or selection=='margarita':
