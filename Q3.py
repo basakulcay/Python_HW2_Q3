@@ -70,12 +70,15 @@ def main():
         if selection.lower()=='veggie':
             print("Here is your selection: ")
             print(Veggie)
+            price(selection)
         if selection.lower()== 'margarita':
             print("Here is your selection: ")
             print(Margarita)
+            price(selection)
         if selection.lower()== 'bbq':
             print("Here is your selection: ")
             print(BBQ)
+            price(selection)
            
         again=input('Do you want to order another pizza? (Yes or No) ')
         if again=='Yes' or again=='yes':
